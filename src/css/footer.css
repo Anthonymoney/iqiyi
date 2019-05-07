@@ -1,0 +1,49 @@
+.footer {
+  padding-top: 15px;
+  font-size: 12px;
+  margin: 0;
+  padding-bottom: 36px;
+  position: relative;
+  background: #f5f5f5;
+}
+.footer .permission li {
+  margin-right: 43px;
+}
+.footer .permission li a {
+  display: block;
+  color: #777;
+  margin-top: 10px;
+}
+.footer .introduce {
+  padding: 15px 0 10px 0;
+  text-align: center;
+}
+.footer .introduce a {
+  color: #333;
+}
+.footer .introduce i {
+  margin: 0 5px;
+  color: #333;
+  font-style: normal;
+}
+.footer .report {
+  padding: 15px 0 10px 0;
+  text-align: center;
+}
+.footer .report a {
+  color: #666;
+}
+.footer .report .m30 {
+  color: #666;
+  margin-left: 30px;
+}
+.footer .copyright {
+  padding: 15px 0 10px 0;
+  text-align: center;
+  color: #666;
+}
+.footer .copyright a {
+  color: #666;
+}
+
+/*# sourceMappingURL=footer.css.map */

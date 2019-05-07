@@ -1,0 +1,29 @@
+@charset "utf-8";
+.side-nav{
+    position: fixed;
+    left: 1369.5px;
+    bottom: 10px;
+    display: block;
+    width: 36px;
+    margin-left: 3px;
+    height: 82px;
+    ul{
+        width: 36px;
+        .feedback{
+            display: block;
+            width: 36px;
+            height: 36px;
+            background-image: url(../img/baseRedScrollBar.png);
+            background-position: -50px -82px;
+            margin-bottom: 10px;
+        }
+        .totop{
+            display: block;
+            width: 36px;
+            height: 36px;
+            background-image: url(../img/baseRedScrollBar.png);
+            background-position: -50px -46px;
+            margin-bottom: 10px; 
+        }
+    }
+}

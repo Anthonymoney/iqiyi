@@ -1,0 +1,41 @@
+.open {
+  position: relative;
+  height: 60px;
+}
+.open .small {
+  height: 60px;
+}
+.open .small a div {
+  background-image: url(https://pic0.iqiyipic.com/common/20190412/c6ef65b9a5fc447b96a73185b8281c6e.jpg);
+  height: 60px;
+  background-position: center center;
+}
+
+.fold {
+  color: #fff;
+  background-color: #4A708B;
+  width: 44px;
+  height: 15px;
+  padding-left: 0;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  display: block;
+  line-height: 15px;
+  text-indent: 4px;
+  font-size: 12px;
+}
+
+.fold::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url(../img/iqiyiMallPcIndexExpendTrans.png) no-repeat;
+}
+
+/*# sourceMappingURL=top-banner.css.map */

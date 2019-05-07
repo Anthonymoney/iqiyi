@@ -1,0 +1,50 @@
+@charset "utf-8";
+.footer{
+    padding-top:15px; 
+    font-size: 12px;
+    margin: 0;
+    padding-bottom: 36px;
+    position: relative;
+    background: #f5f5f5;
+    .permission{
+        li{
+            margin-right: 43px;
+            a{
+                display: block;
+                color: #777;
+                margin-top:10px; 
+            }
+        }
+    }
+    .introduce{
+        padding: 15px 0 10px 0;
+        text-align: center;
+        a{
+            color: #333;
+        }
+        i{
+            margin: 0 5px;
+            color: #333;
+            font-style: normal;
+        }
+    }
+    .report{
+        padding: 15px 0 10px 0;
+        text-align: center;
+        a{
+            color: #666;
+        }
+        .m30{
+           color: #666;
+            margin-left:30px; 
+        }
+    }
+    .copyright{
+        padding: 15px 0 10px 0;
+        text-align: center;
+        color: #666;
+        a{
+            color: #666;
+        }
+    }
+}

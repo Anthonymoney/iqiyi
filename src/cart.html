@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../src/css/common.css">
+    <link rel="stylesheet" href="../src/css/top.css">
+    <link rel="stylesheet" href="../src/css/reset.css">
+    <link rel="stylesheet" href="../src/css/cart.css">
+</head>
+
+<body>
+    <!-- top -->
+    <div class="topMune">
+    </div>
+
+    <!-- 购物车主体 -->
+    <div class="cart-box">
+        <div class="wrapper">
+
+            <div class="cart-hd">
+                <h1>我的购物车</h1>
+            </div>
+            <div class="cart-goods">
+                <!-- 表格表头 -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="th-info">
+                                <input type="checkbox" checked='checked' class="all">
+                                <span class="sp-all">全选</span>
+                                <span class='shop-info'>商品信息</span>
+                            </th>
+                            <th class="th-price">
+                                单价(元)
+                            </th>
+                            <th class="th-num">
+                                数量
+                            </th>
+                            <th class="th-pay">
+                                实付款
+                            </th>
+                            <th class="th-operate">
+                                交易操作
+                            </th>
+                        </tr>
+                    </thead>
+                </table>
+
+            </div>
+
+            <!-- 表格主体 -->
+            <table class="cart-main">
+                <tbody>
+                    <tr>
+                        <td> <input type="checkbox" checked='checked'></td>
+                        <td><img src="https://img10.360buyimg.com/babel/s200x200_jfs/t1/27977/31/14824/209225/5caafa60Ebeba7326/784950cc3730cf2b.jpg"
+                                alt=""></td>
+                        <td class="describe">
+                            <p>多功能电饭煲多功能电饭煲多功能电饭煲</p>
+                        </td>
+                        <td class="td-price">
+                            30000
+                        </td>
+                        <td class="td-num">
+                            1
+                        </td>
+                        <td class="td-pay">
+                            2500
+                        </td>
+                        <td class="td-del">
+                            <a href="javascript:;">删除</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- 付款 -->
+            <div class="paymoney clear">
+                <a href="javascript:;" class="shop-submit right">结算</a>
+                <span class="total-price right">111</span>
+                
+             
+
+            </div>
+        </div>
+    </div>
+
+    <script src="../src/script/thirdplugins/jquery.js"></script>
+    <script>
+        $('.topMune').load('topMune.html');
+    </script>
+
+</body>
+
+</html>

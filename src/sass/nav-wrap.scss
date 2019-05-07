@@ -1,0 +1,27 @@
+@charset "utf-8";
+.nav-wrap{
+    margin-top: 30px;
+    height: 40px;
+    position: relative;
+    background: #ee394b;
+    ul{
+        width: 860px;
+        height: 40px;
+        li{
+            text-align: center;
+            font-weight: bold;
+            width: 82px;
+            line-height: 40px;
+            height: 40px;
+            box-sizing: border-box;
+            a{  
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.nav-wrap li:hover {
+    border-bottom: 3px solid #770214;
+}

@@ -1,0 +1,156 @@
+@charset "UTF-8";
+/*logo*/
+.logo {
+  display: inline-block;
+  margin-top: 30px;
+}
+.logo img {
+  width: 216px;
+  height: 60px;
+}
+
+/*search*/
+.search {
+  padding-left: 154px;
+  margin-top: 37px;
+  width: 510px;
+}
+.search .wrap-search {
+  border: 1px solid #ee394b;
+  height: 34px;
+  position: relative;
+  /*下拉列表*/
+}
+.search .wrap-search .search-text {
+  width: 396px;
+  border: 0;
+  background: #fff;
+  font-size: 12px;
+  padding-left: 10px;
+  color: #999;
+  height: 14px;
+  line-height: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  outline: 0;
+}
+.search .wrap-search .search-btn {
+  width: 100px;
+  color: #fff;
+  border: 0;
+  background: #eb3b4a;
+  font-size: 20px;
+  height: 35px;
+  margin: -1px;
+  font-family: "\5FAE\8F6F\96C5\9ED1";
+  outline: 0;
+  cursor: pointer;
+}
+.search .wrap-search .search-list {
+  display: none;
+  position: absolute;
+  top: 35px;
+  left: -1px;
+  border-left: 1px solid #ee394b;
+  border-bottom: 1px solid #ee394b;
+  border-right: 1px solid #ee394b;
+  width: 419px;
+  background: #fff;
+}
+.search .wrap-search .search-list li {
+  height: 30px;
+  line-height: 30px;
+}
+.search .wrap-search .search-list li a {
+  padding: 0 10px;
+  height: 30px;
+  font-weight: bold;
+  color: #3c3c3c;
+  display: block;
+  overflow: hidden;
+}
+.search .search-bot {
+  height: 14px;
+  line-height: 14px;
+  overflow: hidden;
+  padding-top: 10px;
+  color: #c7c7c7;
+  margin-left: -8px;
+}
+.search .search-bot .red, .search .search-bot .gray, .search .search-bot .last {
+  color: #ee394b;
+  margin: 0 10px;
+  font-size: 12px;
+  text-decoration: none;
+  font-family: Tahoma,Helvetica,Arial,"\5b8b\4f53",sans-serif;
+}
+.search .search-bot .gray {
+  color: #777;
+}
+.search .search-bot .last {
+  margin-top: -11px;
+}
+.search .search-bot .cutline {
+  margin: 3px 0 0 0;
+}
+
+/*右边*/
+.header-right {
+  margin-top: 30px;
+  font-family: 'Microsoft YaHei';
+  /*箭头*/
+}
+.header-right .arrow {
+  float: right;
+  margin: 31px 0 0 10px;
+  width: 39px;
+  height: 19px;
+  background: url(../img/arrow2.gif) no-repeat;
+}
+.header-right .arrow span {
+  width: 19px;
+  height: 19px;
+  cursor: pointer;
+}
+.header-right .two-pic {
+  width: 160px;
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+}
+.header-right .two-pic li {
+  width: 160px;
+  position: absolute;
+}
+.header-right .two-pic li img {
+  margin-right: 10px;
+  width: 50px;
+  height: 50px;
+}
+.header-right .two-pic li p {
+  width: 100px;
+  line-height: 20px;
+  padding: 5px 0;
+}
+.header-right .two-pic li p b {
+  font-size: 12px;
+  display: block;
+  color: #999;
+  font-weight: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.header-right .two-pic li p span {
+  font-size: 12px;
+  display: block;
+  width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #666;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=header.css.map */

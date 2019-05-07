@@ -1,0 +1,174 @@
+@charset "UTF-8";
+.topMune {
+  font-size: 12px;
+  background: #f7f7f7;
+  height: 31px;
+  line-height: 32px;
+  border-bottom: 1px solid #e7e7e7;
+  position: relative;
+  color: #999;
+  font-family: Tahoma,Helvetica,Arial,"\5b8b\4f53",sans-serif;
+}
+
+.welcome {
+  margin-right: 20px;
+}
+
+/*登陆注册*/
+.login-regist {
+  display: inline;
+  height: 30px;
+  position: relative;
+  margin-right: 20px;
+}
+.login-regist .login, .login-regist .regist, .login-regist .cart-a, .login-regist .client-a, .login-regist .favorites-a, .login-regist .aboutus-a, .login-regist .merchant-a, .login-regist .ai-a {
+  color: #999;
+  margin-right: 20px;
+  text-decoration: none;
+}
+.login-regist .regist {
+  color: #999;
+  text-decoration: none;
+}
+
+/*right-div*/
+.cart, .client-center, .merchant-center, .favorites, .ai-index, .aboutus {
+  font-size: 12px;
+  vertical-align: top;
+  display: inline-block;
+  text-align: left;
+  position: relative;
+  margin-left: 20px;
+  height: 32px;
+}
+
+.merchant-center {
+  margin-right: 20px;
+}
+
+.favorites {
+  margin-right: 20px;
+}
+
+.aboutus {
+  margin-right: 20px;
+  padding: 0 2px;
+  border-left: 1px solid #f7f7f7;
+  border-right: 1px solid #f7f7f7;
+}
+
+/*right-div-a*/
+.cart-a, .client-a, .favorites-a, .aboutus-a, .merchant-a, .ai-a {
+  height: 32px;
+  line-height: 32px;
+  color: #999;
+  display: inline-block;
+}
+
+/*字体图标*/
+.cart-i, .client-i, .favorites-i, .aboutus-i, .aboutus-i-1, .merchant-i {
+  background: url(../img/topMenuCar_redicon.png) no-repeat;
+  width: 12px;
+  height: 12px;
+  margin-top: 10px;
+  margin-right: 5px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.client-i, .favorites-i, .aboutus-i, .aboutus-i-1, .merchant-i {
+  background: url(../img/topMenu_redicon.png) no-repeat;
+}
+
+.favorites-i, .aboutus-i, .aboutus-i-1, .merchant-i {
+  height: 13px;
+  background-position: -110px 1px;
+}
+
+.aboutus-i {
+  background-position: -40px 1px;
+}
+
+.aboutus-i-1 {
+  background-position: -80px 0;
+  width: 5px;
+  height: 3px;
+  margin-top: 15px;
+  margin-left: 5px;
+}
+
+.merchant-i {
+  background-position: -60px 1px;
+}
+
+/*right-span-text*/
+.text-span {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.cartnum {
+  font-weight: bold;
+  color: #f66a11;
+  font-style: normal;
+}
+
+/*竖线*/
+.cutline {
+  margin-top: 10px;
+  display: inline-block;
+  overflow: hidden;
+  height: 8px;
+  border-left: 1px solid #e5e5e5;
+}
+
+/*二维码*/
+.two-code {
+  z-index: 10;
+  position: absolute;
+  border-left: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
+  border-right: 1px solid #e7e7e7;
+  border-top: 0;
+  left: -1px;
+  top: 32px;
+  background: #fff;
+  padding: 10px;
+  width: 180px;
+  display: none;
+}
+.two-code .code-left {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+}
+.two-code .code-left img {
+  width: 80px;
+  height: 80px;
+  display: block;
+}
+.two-code .code-right {
+  width: 90px;
+  padding-top: 18px;
+}
+.two-code .code-right p {
+  line-height: 24px;
+  color: #333;
+}
+
+/*hover*/
+.login:hover, .regist:hover, .cart-a:hover, .client-a:hover, .favorites-a:hover, .aboutus-a:hover, .merchant-a:hover, .ai-a:hover {
+  color: red;
+}
+
+/*二维码二级菜单*/
+.aboutus:hover {
+  background: #fff;
+  border-left: 1px solid #e7e7e7;
+  border-right: 1px solid #e7e7e7;
+}
+.aboutus:hover .two-code {
+  display: block;
+}
+
+/*# sourceMappingURL=top.css.map */

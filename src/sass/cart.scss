@@ -1,0 +1,96 @@
+@charset "utf-8";
+.cart-box{
+    background: #fafafa;
+    border-top: 1px solid#e7e7e7;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    .wrapper{
+        border: 1px solid #e7e7e7;
+        background: #fff;
+        width: 938px;
+        padding: 20px;
+      
+        .cart-hd{
+            margin-bottom: 16px;
+            height: 38px;
+            line-height: 35px;
+            border-bottom: 1px solid #e7e7e7;
+        }
+          /*购物车表头*/
+        .cart-goods{
+            height: 38px;
+            line-height: 38px;
+            border: 1px solid #e7e7e7;
+            background: #f7f7f7;  
+            th{
+                font-weight: normal;
+                width: 120px;
+            }
+            .th-info{
+                width: 400px;
+                .sp-all{
+                    margin-right: 120px
+                }
+                .shop-info{
+                    margin-right: 120px
+                }
+            }
+        }
+
+        /*购物车主题*/ 
+        .cart-main{
+            margin-top: 10px;
+            td{
+                vertical-align: middle;
+                padding-left:20px;
+                width: 30px;
+                img{
+                    width: 80px;
+                    height: 80px;
+                }
+            }
+            .describe{
+                width: 200px;
+            }
+            .td-price{
+               padding-left:65px;     
+            }
+            .td-num{
+                padding-left:90px;
+            }
+            .td-pay{
+                padding-left:85px;
+            }
+            .td-del{
+                width: 35px;
+                padding-left:70px;
+                a{
+                    
+                    color: #666;
+                }
+            }
+        }
+
+        /*付款按钮*/
+        .paymoney{
+            span{
+                font-size: 18px;
+                color: #ee394b;
+                line-height:40px;
+                margin-right:20px; 
+            }
+            a{
+                display: inline-block;
+                width: 120px;
+                height: 38px;
+                background: #ee394b;
+                border: 1px solid #ee394b;
+                border-radius: 3px;
+                color: #fff;
+                font-size: 18px;
+                line-height: 38px;
+                text-align: center;
+            }
+        } 
+    }
+}

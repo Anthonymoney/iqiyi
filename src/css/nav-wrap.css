@@ -1,0 +1,28 @@
+.nav-wrap {
+  margin-top: 30px;
+  height: 40px;
+  position: relative;
+  background: #ee394b;
+}
+.nav-wrap ul {
+  width: 860px;
+  height: 40px;
+}
+.nav-wrap ul li {
+  text-align: center;
+  font-weight: bold;
+  width: 82px;
+  line-height: 40px;
+  height: 40px;
+  box-sizing: border-box;
+}
+.nav-wrap ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-wrap li:hover {
+  border-bottom: 3px solid #770214;
+}
+
+/*# sourceMappingURL=nav-wrap.css.map */

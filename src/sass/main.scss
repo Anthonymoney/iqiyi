@@ -1,0 +1,458 @@
+@charset "utf-8";
+/*遮罩*/
+.mask{
+    display: none;
+    z-index: 20;
+    position:absolute;
+    width:100%;
+    left:0;
+    top:0;
+    background:gray;
+    opacity: 0.6;    
+}
+.wrapper-box{
+    background: #fff;
+}
+/*轮播图*/ 
+.banner{
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    .banner-ul{
+        position: relative;
+        li{
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 400px;
+            width: 100%;
+            a{
+                display: block;
+                height: 400px;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: auto;
+            }
+        }
+    }
+    .ban-left{
+        width: 66px;
+        display: none;
+        height: 66px;
+        position: absolute;
+        opacity: 0.6;
+        left: 50%;
+        top: 50%;
+        margin-top: -35px;
+        margin-left: -600px;
+        background: url(../img/new_focus_prev.png) no-repeat;
+        background-position: 0 0;
+    }
+    .ban-right{
+        width: 66px;
+        display: none;
+        height: 66px;
+        position: absolute;
+        opacity: 0.6;
+        right: 50%;
+        top: 50%;
+        margin-top: -35px;
+        margin-right: -600px;
+        background: url(../img/new_focus_next.png) no-repeat;
+        background-position: 0 0;
+    }
+    .circlelist{
+        width: 100%;
+        position: absolute;
+        bottom: 22px;
+        text-align: center;
+        left: 50%;
+        li{
+            display: inline-block;
+            cursor: pointer;
+            margin: 0 6px;
+            width: 12px;
+            height: 12px;
+            border-radius: 12px;
+            background: rgba(0,0,0,0.4);
+        }
+    }
+}
+
+.active{
+        background: red!important;
+}
+
+.banner:hover{
+    .ban-left{
+        display: block;
+    }
+    .ban-right{
+        display: block;
+    }
+}
+
+
+/*头部广告*/
+.top-ad{
+    margin-top: 40px;
+    img{
+        width: 1200px;
+        height: 120px;
+    }
+}
+
+/*每日精选*/
+/*标题*/
+.today-choiceness{
+    padding-top: 25px;
+    .choiceness-t{
+        height: 36px;
+        margin: 15px 0;    
+        i{
+            background: url(http://pic5.iqiyipic.com/common/20160907/ae2dd09618d545a595cc8c97be29a45d.png);
+            vertical-align:top;
+            width: 36px;
+            height: 36px;
+            display: inline-block;
+            background-repeat: no-repeat;
+        }
+        .choic-s1{
+            vertical-align: middle;
+            line-height: 36px;
+            margin: 0 10px;
+            font-size: 28px;
+            color: #333;
+        }
+        .choic-s2{
+            vertical-align: bottom;
+            display: inline-block;
+            margin-bottom: 4px;
+            line-height: 16px;
+            padding: 0 10px;
+            font-size: 16px;
+            color: #c2c2c2;
+        }
+        a{
+            display: inline-block;
+            font-size: 14px;
+            color: #666;
+            text-decoration: none;
+        }
+    }
+}
+
+/*productlist*/
+.ul-productlist{
+    margin-left: -1px;
+    margin-top: -1px;
+    border-right: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    li{
+        float: left;
+        border-top: 1px solid #e5e5e5;
+        border-left: 1px solid #e5e5e5;
+        div{
+            width: 239px;
+            display: block;
+            position: relative;
+            cursor: pointer;
+            a{
+                display: block;
+                text-align: center;
+                img{
+
+                    width: 140px;
+                    height: 140px;
+                }
+            }
+            div{
+                margin-top: 15px;
+                margin-left: 14px;
+                margin-right: 14px;
+                /*三个p标签样式*/
+                .title{
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    width: 200px;
+                    font-size: 14px;
+                    line-height: 22px;
+                    height: 22px;
+                }
+                .sbutitle{
+                    font-size: 12px;
+                    color: #999;
+                    line-height: 20px;
+                    height: 20px;
+                    span{
+                        margin-right: 5px;
+                        display: inline-block;
+                        height: 18px;
+                        line-height: 18px;
+                        position: relative;
+                        font-size: 12px;
+                        color: #fff;
+                        background: url(http://www.iqiyipic.com/common/fix/PCIndex/images/newPCindexproductStatus.png) repeat-x;
+                        background-position: 0 0;
+                        border-radius: 3px;
+                        em{
+                            display: inline-block;
+                            margin-left: 10px;
+                            height: 18px;
+                            line-height: 18px;
+                            background-color: #ee394b;
+                            border-radius: 3px;
+                            padding-right: 3px;
+                            width: 52px;
+                            word-break: break-all;
+                            text-overflow: clip;
+                            overflow: hidden;
+                            vertical-align: bottom;
+                        }
+                    }
+                }
+                .price{
+                    height: 44px;
+                    line-height: 44px;
+                    span{
+                        font-size: 20px;
+                        color: #ee394b;
+                    }
+                }
+            }
+        }    
+    }
+}
+
+/*今日特卖*/
+/*标题*/
+ .today-sale{
+    padding-top: 25px;
+    .sale-t{
+        height: 36px;
+        margin: 15px 0;    
+        i{
+            background: url(http://pic3.iqiyipic.com/common/20160907/bb2d4ba3d4fa4b369c76b813af23cd7f.png);
+            vertical-align:top;
+            width: 36px;
+            height: 36px;
+            display: inline-block;
+            background-repeat: no-repeat;
+        }
+        .sale-s1{
+            vertical-align: middle;
+            line-height: 36px;
+            margin: 0 10px;
+            font-size: 28px;
+            color: #333;
+        }
+        .sale-s2{
+            vertical-align: bottom;
+            display: inline-block;
+            margin-bottom: 4px;
+            line-height: 16px;
+            padding: 0 10px;
+            font-size: 16px;
+            color: #c2c2c2;
+        }
+    }
+
+}
+/*sale-b*/
+
+/*sale-list*/
+.sale-list{
+    width: 840px;
+    float: left;
+    overflow: hidden;
+    margin-right: 20px;    
+    li{
+        width: 100%;
+        border: 1px solid #e5e5e5;
+        box-sizing: border-box;
+        height: 292px;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+    .shopinfo{
+        width: 258px;
+        text-align: center;
+        .p1{
+            font-size: 24px;
+            color: #333;
+            margin:114px 9px 14px 9px;
+        }
+        .p2{
+            color: #777;
+            font-size: 18px;
+        }
+    }
+    .shopimg{
+        width: 580px;
+        height: 100%;
+        img{
+            width: 580px;
+            height: 290px;
+        }
+    }
+}
+
+/*热销*/ 
+.hot-sale{
+    width: 340px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    .sale-title{
+        width: 100%;
+        background: url(../img/nav_tint_redbg.png) no-repeat;
+        height: 50px;
+        line-height: 50px;
+        i{
+            width: 20px;
+            height: 20px;
+            margin-left: 16px;
+            margin-right: 12px;
+            margin-top: 15px;
+            background: url(../img/good_hot_redranking.png) no-repeat;
+        }
+        h1{
+            font-size: 21px;
+            color: #333;
+            width: 290px;
+            font-weight: normal;
+        }
+    }
+    .hot-sale-list{
+        width: 100%;
+        background: #fff;
+        border: 1px solid #e5e5e5;
+        border-top: 0;
+        box-sizing: border-box;
+        .shop-img{
+            width: 130px;
+            height: 110px;
+            img{
+                margin: 10px;
+                width: 90px;
+                height: 90px;
+            }
+        }
+        .shop-info{
+            border-bottom: 1px solid #e5e5e5;
+            box-sizing: border-box;
+            position: relative;
+            height: 110px;
+            width: 200px;
+            div{
+                background: url(../img/hot_first.png) no-repeat;
+                width: 57px;
+                height: 20px;
+                margin-top: 14px;
+                margin-bottom: 10px    
+            }
+            .p1{
+                width: 100%;
+                font-size: 14px;
+                color: #333;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                line-height: 14px;
+                a{
+                    color: #777
+                }
+            }
+            .p2{
+                width: 100%;
+                position: absolute;
+                bottom: 10px;
+                left: 0;
+                line-height: 18px;
+                span{
+                    font-size: 18px;
+                    color: #ee394b;
+                    display: inline-block;
+                }
+            }
+        }
+        /*去掉热销最底下的底部边框*/
+        .last{
+            border: 0;
+        }
+    }
+}
+
+/*热门*/
+.hot-recommend{
+    width: 340px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    .hot-title{
+        width: 100%;
+        background: url(../img/nav_tint_redbg.png) no-repeat;
+        height: 50px;
+        line-height: 50px;
+        i{
+            width: 20px;
+            height: 20px;
+            margin-left: 16px;
+            margin-right: 12px;
+            margin-top: 15px;
+            background: url(../img/good_hot_redrecommend.png) no-repeat;
+        }
+        h1{
+            font-size: 21px;
+            color: #333;
+            width: 290px;
+            font-weight: normal;
+        }
+    }
+    .hot-list{
+        width: 100%;
+        background: #fff;
+        border: 1px solid #e5e5e5;
+        border-top: 0;
+        box-sizing: border-box;
+        li{
+            width: 340px;
+            height: 230px;
+            .goodimg{
+                width: 100%;
+                height: 230px;
+                img{
+                    padding-left: 10px;
+                    padding-top: 10px;
+                    width: 320px;
+                    height: 160px;
+                }
+                .p1{
+                    font-size: 14px;
+                    color: #333;
+                    line-height: 14px;
+                    margin:8px 0 8px 10px;
+                    height: 14px;
+                }
+                .p2{
+                    font-size: 12px;
+                    color: #999;
+                    line-height: 12px;
+                    margin-left: 10px;
+                    height: 12px;
+                }
+            }
+        }
+    }
+}
+
+
+/*底部广告*/
+.buttom-ad{
+    margin-top: 40px;
+    img{
+        width: 1200px;
+        height: 120px
+    }
+}
+

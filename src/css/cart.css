@@ -1,0 +1,92 @@
+@charset "UTF-8";
+.cart-box {
+  background: #fafafa;
+  border-top: 1px solid #e7e7e7;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+.cart-box .wrapper {
+  border: 1px solid #e7e7e7;
+  background: #fff;
+  width: 938px;
+  padding: 20px;
+  /*购物车表头*/
+  /*购物车主题*/
+  /*付款按钮*/
+}
+.cart-box .wrapper .cart-hd {
+  margin-bottom: 16px;
+  height: 38px;
+  line-height: 35px;
+  border-bottom: 1px solid #e7e7e7;
+}
+.cart-box .wrapper .cart-goods {
+  height: 38px;
+  line-height: 38px;
+  border: 1px solid #e7e7e7;
+  background: #f7f7f7;
+}
+.cart-box .wrapper .cart-goods th {
+  font-weight: normal;
+  width: 120px;
+}
+.cart-box .wrapper .cart-goods .th-info {
+  width: 400px;
+}
+.cart-box .wrapper .cart-goods .th-info .sp-all {
+  margin-right: 120px;
+}
+.cart-box .wrapper .cart-goods .th-info .shop-info {
+  margin-right: 120px;
+}
+.cart-box .wrapper .cart-main {
+  margin-top: 10px;
+}
+.cart-box .wrapper .cart-main td {
+  vertical-align: middle;
+  padding-left: 20px;
+  width: 30px;
+}
+.cart-box .wrapper .cart-main td img {
+  width: 80px;
+  height: 80px;
+}
+.cart-box .wrapper .cart-main .describe {
+  width: 200px;
+}
+.cart-box .wrapper .cart-main .td-price {
+  padding-left: 65px;
+}
+.cart-box .wrapper .cart-main .td-num {
+  padding-left: 90px;
+}
+.cart-box .wrapper .cart-main .td-pay {
+  padding-left: 85px;
+}
+.cart-box .wrapper .cart-main .td-del {
+  width: 35px;
+  padding-left: 70px;
+}
+.cart-box .wrapper .cart-main .td-del a {
+  color: #666;
+}
+.cart-box .wrapper .paymoney span {
+  font-size: 18px;
+  color: #ee394b;
+  line-height: 40px;
+  margin-right: 20px;
+}
+.cart-box .wrapper .paymoney a {
+  display: inline-block;
+  width: 120px;
+  height: 38px;
+  background: #ee394b;
+  border: 1px solid #ee394b;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 38px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=cart.css.map */
