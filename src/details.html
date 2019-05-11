@@ -6,21 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>购物车-买家中心-爱奇艺商城</title>
-    <link rel="shortcut icon" href="//www.iqiyipic.com/common/images/logo.ico" type="image/icon">
+    <link rel="shortcut icon" href="../src/img/logo.ico" type="image/icon">
     <link rel="stylesheet" href="../src/css/common.css">
     <link rel="stylesheet" href="../src/css/top.css">
+    <link rel="stylesheet" href="../src/css/main.css">
     <link rel="stylesheet" href="../src/css/reset.css">
     <link rel="stylesheet" href="../src/css/top-banner.css">
     <link rel="stylesheet" href="../src/css/header.css">
     <link rel="stylesheet" href="../src/css/nav-wrap.css">
     <link rel="stylesheet" href="../src/css/shop.css">
     <link rel="stylesheet" href="../src/css/footer.css">
+    <link rel="stylesheet" href="../src/css/login.css">
+    <link rel="stylesheet" href="../src/css/resgister.css">
 </head>
 
 <body>
-        <script src="../src/script/thirdplugins/jquery.js"></script>
+    <script src="../src/script/thirdplugins/jquery.js"></script>
+
+    <!-- 遮罩 -->
+    <div class="mask">
+    </div>
+
     <!-- top -->
-<div class="topMune">
+    <div class="topMune">
         <div class="wrapper">
             <div class="top-nav">
                 <!-- left -->
@@ -33,8 +41,8 @@
                     </div>
                     <span class="welcome left">欢迎来到爱奇艺商城</span>
                     <div class="login-regist left">
-                        <a href="" class="login left">请登录</a>
-                        <a href="" class="regist left">免费注册</a>
+                        <a href="javascript:;" class="login left">请登录</a>
+                        <a href="javascript:;" class="regist left">免费注册</a>
                     </div>
                     <div class="login-name" style="display:none"></div>
                 </div>
@@ -98,24 +106,56 @@
             </div>
         </div>
     </div>
-    
-    <!-- top-banner -->
-    <div class="top-banner">
-        <div class="open">
-            <div class="big">
-                <a href="">
-                    <div></div>
-                </a>
-            </div>
-            <div class="small">
-                <a href="">
-                    <div></div>
-                </a>
-            </div>
-            <span class="fold">展开</span>
+
+
+    <!-- 登陆 -->
+    <div class="login-box">
+        <div class="login-logo">
+            <span>请登陆</span>
+            <a href="javascript:;" class="right close">X</a>
         </div>
+        <form action="">
+            <div class="username">
+                <label for="">用户名：</label><input type="text" name="username" placeholder="请输入用户名">
+            </div>
+            <div class="password">
+                <label for="">密码：</label><input type="password" name="password" placeholder="请输入密码">
+            </div>
+            <div class="btn">
+                <input type="submit" value="登入">
+            </div>
+        </form>
     </div>
-    
+
+    <!-- 注册 -->
+    <div class="register-box">
+            <div class="clear">
+                <span class="register-close right">X</span>
+            </div>
+           
+            <form action="" method="POST">
+                <div class="box">
+                    <label for="">用户名：</label><input type="text" name="username" placeholder="请输入用户名"><br>
+                    <span>√</span>
+                    <i>X</i>
+                </div>
+                <div class="input-tip"></div>
+                <div class="box">
+                    <label for="">设置密码：</label><input type="password" name="password" placeholder="请输入密码">
+                    <span>√</span>
+                    <i>X</i>
+                </div>
+                <div class="input-tip"></div>
+                <div class="box">
+                    <label for="">确认密码：</label><input type="password" placeholder="请再次输入密码">
+                    <span>√</span>
+                    <i>X</i>
+                </div>
+                <div class="input-tip"></div>
+                <input type="submit" value="立即注册" name="submit" class="registor-sub">
+            </form>
+    </div>
+
     <!-- header -->
     <div class="header clear">
         <div class="wrapper">
@@ -218,7 +258,11 @@
             </div>
         </div>
     </div>
+
     
+
+
+
     <!-- nav-wrap -->
     <div class="nav-wrap">
         <div class="wrapper">
@@ -251,7 +295,7 @@
             </ul>
         </div>
     </div>
-    
+
     <!-- shop -->
     <div class="shop wrapper">
         <div class="shoptitle">
@@ -259,281 +303,190 @@
             <i>></i>
             <span>掌上游戏机400种经典怀旧FC掌上游戏迷你儿童游戏掌机</span>
         </div>
-    
+
         <!-- 放大镜 -->
         <div class="container">
-    
-                <div class="spic">
-                    <img src="https://mall3.iqiyipic.com/mall/20181206/85/69/mall_5c0941f774d579560a1f8569_1x1.jpg">
-                    <div class="sf"></div>
+
+            <div class="spic">
+                <img src="">
+                <div class="sf"></div>
+            </div>
+
+            <div class="bf">
+                <img src="" class="bpic">
+            </div>
+
+            <!-- 图片列表集合 -->
+            <div id="ulist">
+                <a href="javascript:;" class="left-arrow">&lt;</a>
+                <div id="list">
+                    <ul>
+                        <!-- li与img渲染 -->
+                    </ul>
                 </div>
-        
-                <div class="bf">
-                    <img src="https://mall3.iqiyipic.com/mall/20181206/85/69/mall_5c0941f774d579560a1f8569_1x1.jpg" class="bpic">
-                </div>
-        
-                <!-- 图片列表集合 -->
-                <div id="ulist">
-                    <a href="javascript:;" class="left-arrow">&lt;</a>
-                    <div id="list">
-                        <ul>
-                            <li><img src="https://mall3.iqiyipic.com/mall/20181206/85/69/mall_5c0941f774d579560a1f8569_1x1.jpg" alt=""></li>
-                            <li><img src="https://mall3.iqiyipic.com/mall/20181206/85/69/mall_5c0941f774d579560a1f8569_1x1.jpg" alt=""></li>
-                            <li><img src="https://mall3.iqiyipic.com/mall/20181206/85/69/mall_5c0941f774d579560a1f8569_1x1.jpg" alt=""></li>
-                            <li><img src="https://mall3.iqiyipic.com/mall/20181206/85/69/mall_5c0941f774d579560a1f8569_1x1.jpg" alt=""></li>
-                            <li><img src="https://mall3.iqiyipic.com/mall/20181206/85/69/mall_5c0941f774d579560a1f8569_1x1.jpg" alt=""></li>
-                            <li><img src="https://mall0.iqiyipic.com/mall/20181206/08/01/mall_5c0941f714d4557695fd0801_1x1.jpg" alt=""></li>
-                            <li><img src="https://mall0.iqiyipic.com/mall/20181206/08/01/mall_5c0941f714d4557695fd0801_1x1.jpg" alt=""></li>
-                            
-                        </ul>
-                    </div>
-                    <a href="javascript:;" class="right-arrow">&gt;</a>
-                </div>
-        
+                <a href="javascript:;" class="right-arrow">&gt;</a>
+            </div>
         </div>
-    
+
         <!-- shop价格详情 -->
         <div class="shopdetails right">
             <div class="title">
                 <h3>掌上游戏机400种经典怀旧FC掌上游戏迷你儿童游戏掌机</h3>
             </div>
             <div class="price">
-                    <span class="sp1"></span>促销价</span>
-                    <span class="sp2">￥49</span>
+                <span class="sp1"></span>促销价</span>
+                <span class="sp2">￥49</span>
+            </div>
+            <div class="shotsnum">
+                <span class="l-arrow"><</span>
+                <input class="num" type="text" value="1">
+                <span class="r-arrow">></span>
             </div>
             <div class="buy">
                 <div class="nowbuy">
-                        立即购买
+                    立即购买
                 </div>
                 <div class="joincart">
                     加入购物车
                 </div>
             </div>
         </div>
-    
-      
+
+        <!-- 我的购物车 -->
+       
+        <a href="cart.html" class="tocart" target="blank"></a>
+       
     </div>
-    
-      <!-- footer -->
+
+    <!-- footer -->
     <div class="footer">
-            <div class="wrapper">
-                    <div class="permission">
-                        <ul class="clear">
-                            <li class="left">
-                                <a href="">京网文[2015]0652-282号-1</a>
-                                <a href="">京ICP证110636号</a>
-                                <a href="">食品许可证JY11108111598788</a>
-                            </li>
-            
-                            <li class="left">
-                                <a href="">
-                                    <img src="http://www.iqiyipic.com/common/fix/trust.png" alt="">
-                                    中国互联网诚信联盟
-                                </a>
-                                <a href="">
-                                    <img src="http://www.iqiyipic.com/common/fix/records.png" alt="">
-                                    经营性网站备案信息
-                                </a>
-                            </li>
-            
-                            <li class="left">
-                                <a href="">出版物经营许可证 </a>
-                                <a href="">京公网安备 11010802010263号</a>
-                            </li>
-            
-                            <li class="left">
-                                <a href="">信息网络传播视听节目许可证 0110544号</a>
-                                <a href="">增值电信业务经营许可证 B2-20120273</a>
-                            </li>
-            
-                            <li class="left">
-                                <a href="">广播电视节目制作经营许可证 (京)字第1938号</a>
-                                <a href="">互联网药品信息服务资格证书 (京)-经营性-2013-0012</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="introduce">
+        <div class="wrapper">
+            <div class="permission">
+                <ul class="clear">
+                    <li class="left">
+                        <a href="">京网文[2015]0652-282号-1</a>
+                        <a href="">京ICP证110636号</a>
+                        <a href="">食品许可证JY11108111598788</a>
+                    </li>
+
+                    <li class="left">
                         <a href="">
-                            公司介绍
+                            <img src="http://www.iqiyipic.com/common/fix/trust.png" alt="">
+                            中国互联网诚信联盟
                         </a>
-                        <i>|</i>
                         <a href="">
-                            新闻动态
+                            <img src="http://www.iqiyipic.com/common/fix/records.png" alt="">
+                            经营性网站备案信息
                         </a>
-                        <i>|</i>
-                        <a href="">
-                            联系方式
-                        </a>
-                        <i>|</i>
-                        <a href="">
-                            招聘英才
-                        </a>
-                        <i>|</i>
-                        <a href="">
-                            爱奇艺实验室
-                        </a>
-                        <i>|</i>
-                        <a href="">
-                            开放平台
-                        </a>
-                        <i>|</i>
-                        <a href="">
-                            爱奇艺内容合作标准
-                        </a>
-                        <i>|</i>
-                        <a href="">
-                            爱奇艺号
-                        </a>
-                        <i>|</i>
-                        <a href="">
-                            安全应急响应中心
-                        </a>
-                        <i>|</i>
-                        <a href="">
-                            帮助中心
-                        </a>
-                        <i>|</i>
-                        <a href="">
-                            侵权投诉
-                        </a>
-                        <i>|</i>
-                    </div>
-                    <div class="report">
-                        <a href="">
-                            中国互联网举报中心
-                        </a>
-                        <a href="" class="m30">
-                            网络举报APP下载
-                        </a>
-                        <a href="" class="m30">
-                            网上有害信息举报专区
-                        </a>
-                        <a href="" class="m30">
-                            网上暴恐有害信息举报
-                        </a>
-                        <a href="" class="m30">
-                            儿童色情信息举报专区
-                        </a>
-                        <a href="" class="m30">
-                            违法和不良信息举报电话：400-923-7171
-                        </a>
-                        <a href="" class="m30">
-                            举报邮箱：jubao365@qiyi.com
-                        </a>
-            
-                    </div>
-                    <div class=" copyright ">
-                        <a href="">
-                            反盗版和反盗链权利声明
-                        </a>
-                        Copyright © 2018
-                        <a href="">爱奇艺</a>
-                        All Rights Reserved
-                    </div>
-                </div>
+                    </li>
+
+                    <li class="left">
+                        <a href="">出版物经营许可证 </a>
+                        <a href="">京公网安备 11010802010263号</a>
+                    </li>
+
+                    <li class="left">
+                        <a href="">信息网络传播视听节目许可证 0110544号</a>
+                        <a href="">增值电信业务经营许可证 B2-20120273</a>
+                    </li>
+
+                    <li class="left">
+                        <a href="">广播电视节目制作经营许可证 (京)字第1938号</a>
+                        <a href="">互联网药品信息服务资格证书 (京)-经营性-2013-0012</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="introduce">
+                <a href="">
+                    公司介绍
+                </a>
+                <i>|</i>
+                <a href="">
+                    新闻动态
+                </a>
+                <i>|</i>
+                <a href="">
+                    联系方式
+                </a>
+                <i>|</i>
+                <a href="">
+                    招聘英才
+                </a>
+                <i>|</i>
+                <a href="">
+                    爱奇艺实验室
+                </a>
+                <i>|</i>
+                <a href="">
+                    开放平台
+                </a>
+                <i>|</i>
+                <a href="">
+                    爱奇艺内容合作标准
+                </a>
+                <i>|</i>
+                <a href="">
+                    爱奇艺号
+                </a>
+                <i>|</i>
+                <a href="">
+                    安全应急响应中心
+                </a>
+                <i>|</i>
+                <a href="">
+                    帮助中心
+                </a>
+                <i>|</i>
+                <a href="">
+                    侵权投诉
+                </a>
+                <i>|</i>
+            </div>
+            <div class="report">
+                <a href="">
+                    中国互联网举报中心
+                </a>
+                <a href="" class="m30">
+                    网络举报APP下载
+                </a>
+                <a href="" class="m30">
+                    网上有害信息举报专区
+                </a>
+                <a href="" class="m30">
+                    网上暴恐有害信息举报
+                </a>
+                <a href="" class="m30">
+                    儿童色情信息举报专区
+                </a>
+                <a href="" class="m30">
+                    违法和不良信息举报电话：400-923-7171
+                </a>
+                <a href="" class="m30">
+                    举报邮箱：jubao365@qiyi.com
+                </a>
+
+            </div>
+            <div class=" copyright ">
+                <a href="">
+                    反盗版和反盗链权利声明
+                </a>
+                Copyright © 2018
+                <a href="">爱奇艺</a>
+                All Rights Reserved
+            </div>
+        </div>
     </div>
 
 
-    <script>
-            var $spic = $('.spic');
-            var $sf = $('.sf');
-            var $bf = $('.bf');
-            var $bpic = $('.bpic');
     
-            //1鼠标划入小图，求小放大镜宽高，并且出现 spic*bf/bpic=sf
-            // $spic.on('mouseover',function(){
-            //     $sf.css('display','block');
-            // })
-    
-            $spic.hover(function () {
-                $sf.css('display', 'block');
-                $bf.css('display', 'block')
-                $sf.width($bf.width() * $spic.width() / $bpic.width());
-                $sf.height($bf.height() * $spic.height() / $bpic.height());
-                //鼠标在小图移动，sf的位置不断改变
-                $spic.on('mousemove', function (ev) {
-                    var t = ev.pageY - $('.container').offset().top - $sf.height() / 2;
-                    var l = ev.pageX - $('.container').offset().left - $sf.width() / 2;
-                    var bili = $bpic.width() / $bf.width();
-                    var ev = ev || window.event;
-                    //限定范围
-                    if (l <= 0) {
-                        l = 0;
-                    } else if (l >= $spic.width() - $sf.width()) {
-                        l = $spic.width() - $sf.width();
-                    }
-                    if (t <= 0) {
-                        t = 0;
-                    } else if (t >= $spic.height() - $sf.height()) {
-                        t = $spic.height() - $sf.height();
-                    }
-                    $sf.css({
-                        top: t,
-                        left: l
-                    })
-                    //让大图等比列移动
-                    $bpic.css({
-                        top: -t * bili,
-                        left: -l * bili
-                    })
-                })
-            }, function () {
-                $sf.css('display', 'none');
-                $bf.css('display', 'none');
-            })
-    
-            //2鼠标点击图片列表，显示当前图片
-            var $aLi = $('#list li');
-            $aLi.on('click', function () {
-                var src = $(this).find('img').attr('src');
-                //console.log(typeof src);
-                $spic.find('img').attr('src', src);
-                $bpic.attr('src', src);
-            })
-    
-            //3点击箭头图片列表移动
-            var $left = $('.left-arrow');
-            var $right = $('.right-arrow');
-            var $ul = $('#list ul');
-            var $lilength = $aLi.eq(0).outerWidth(true);
-            var shownum = 6;
-            //设置ul长度
-            $ul.width($lilength * $aLi.length);
-            $right.on('click', function () {
-                if ($aLi.length > shownum) {
-                    shownum++;
-                    $left.css({
-                        color: '#333'
-                    })
-                }
-                if ($aLi.length == shownum) {
-                    $right.css({
-                        color: '#fff'
-                    })
-                }
-                $ul.animate({
-                    left: -$lilength * (shownum - 6)
-                })
-    
-            })
-            $left.on('click', function () {
-                if(shownum>6){
-                    shownum--;
-                    $right.css({
-                        color: '#333'
-                    })
-                }
-                if(shownum==6){
-                    $left.css({
-                        color: '#fff'
-                    })
-                }
-                $ul.animate({
-                    left:-$lilength*(shownum-6)
-                })
-            }) 
-        </script>
+       
         
+        
+    
+    <script src="../src/script/thirdplugins/jquery.cookie.js"></script>
+    <script src="../src/script/js/details.js"></script>
+
+   
 </body>
 
 </html>

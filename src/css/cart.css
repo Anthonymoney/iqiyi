@@ -45,7 +45,6 @@
 .cart-box .wrapper .cart-main td {
   vertical-align: middle;
   padding-left: 20px;
-  width: 30px;
 }
 .cart-box .wrapper .cart-main td img {
   width: 80px;
@@ -56,19 +55,33 @@
 }
 .cart-box .wrapper .cart-main .td-price {
   padding-left: 65px;
+  width: 100px;
 }
 .cart-box .wrapper .cart-main .td-num {
-  padding-left: 90px;
+  padding-left: 40px;
+  width: 100px;
+}
+.cart-box .wrapper .cart-main .td-num .num {
+  display: inline-block;
+}
+.cart-box .wrapper .cart-main .td-num .arrow-l, .cart-box .wrapper .cart-main .td-num .arrow-r {
+  display: inline-block;
+  border: 1px solid grey;
+  cursor: pointer;
 }
 .cart-box .wrapper .cart-main .td-pay {
-  padding-left: 85px;
+  padding-left: 10px;
+  width: 100px;
 }
 .cart-box .wrapper .cart-main .td-del {
   width: 35px;
-  padding-left: 70px;
+  padding-left: 10px;
 }
 .cart-box .wrapper .cart-main .td-del a {
   color: #666;
+}
+.cart-box .wrapper .paymoney {
+  margin-top: 10px;
 }
 .cart-box .wrapper .paymoney span {
   font-size: 18px;

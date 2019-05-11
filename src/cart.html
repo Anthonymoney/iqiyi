@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>购物车-买家中心-爱奇艺商城</title>
+    <link rel="shortcut icon" href="../src/img/logo.ico" type="image/icon">
     <link rel="stylesheet" href="../src/css/common.css">
     <link rel="stylesheet" href="../src/css/top.css">
     <link rel="stylesheet" href="../src/css/reset.css">
@@ -15,7 +16,84 @@
 <body>
     <!-- top -->
     <div class="topMune">
-    </div>
+        <div class="wrapper">
+                <div class="top-nav">
+                    <!-- left -->
+                    <div class="top-nav-left left">
+                        <div class="username" style="display:none">
+                            <div class="menu">
+                                <a href="" class="name">用户</a>
+                                <i></i>
+                            </div>
+                        </div>
+                        <span class="welcome left">欢迎来到爱奇艺商城</span>
+                        <div class="login-regist left">
+                            <a href="javascript:;" class="login left">请登录</a>
+                            <a href="javascript:;" class="regist left">免费注册</a>
+                        </div>
+                        <div class="login-name" style="display:none"></div>
+                    </div>
+                    <!-- right -->
+                    <div class="top-nav-right right">
+                        <div class="cart left">
+                            <a href="cart.html" class="cart-a left">
+                                <i class="cart-i left"></i>
+                                <span class="text-span left">
+                                    购物车
+                                    <i class="cartnum">0</i>
+                                    件
+                                </span>
+                            </a>
+                        </div>
+                        <div class="client-center left">
+                            <a href="" class="client-a left">
+                                <i class="client-i left"></i>
+                                <span class="text-span left">
+                                    买家中心
+                                </span>
+                            </a>
+                        </div>
+                        <div class="favorites left">
+                            <a href="" class="favorites-a left">
+                                <i class="favorites-i left"></i>
+                                <span class="text-span left">我的收藏</span>
+                            </a>
+                        </div>
+                        <div class="cutline left"></div>
+                        <div class="aboutus left">
+                            <a href="" class="aboutus-a left">
+                                <i class="aboutus-i left"></i>
+                                <span class="text-span left">关于我们</span>
+                                <i class="aboutus-i-1 left"></i>
+                            </a>
+                            <div class="two-code">
+                                <div class="code-left left">
+                                    <img src="../src/img/mall_qrcodeNew.jpg">
+                                </div>
+                                <div class="code-right left">
+                                    <p>微信扫一扫</p>
+                                    <p>了解商城动态</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cutline left"></div>
+                        <div class="merchant-center left">
+                            <a href="" class="merchant-a left">
+                                <i class="merchant-i left"></i>
+                                <span class="text-span left">商家中心</span>
+                            </a>
+                        </div>
+                        <div class="cutline left"></div>
+                        <div class="ai-index left">
+                            <a href="//www.iqiyi.com/" class="ai-a left">
+                                <span class="text-span left">爱奇艺首页</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</div>
+
 
     <!-- 购物车主体 -->
     <div class="cart-box">
@@ -49,27 +127,28 @@
                         </tr>
                     </thead>
                 </table>
-
             </div>
 
             <!-- 表格主体 -->
             <table class="cart-main">
                 <tbody>
-                    <tr>
-                        <td> <input type="checkbox" checked='checked'></td>
-                        <td><img src="https://img10.360buyimg.com/babel/s200x200_jfs/t1/27977/31/14824/209225/5caafa60Ebeba7326/784950cc3730cf2b.jpg"
-                                alt=""></td>
+                    <tr class='nonetr' style="display:none">
+                        <td> <input type="checkbox" checked></td>
+                        <td><img src=""
+                                alt="" class="cartimg"></td>
                         <td class="describe">
-                            <p>多功能电饭煲多功能电饭煲多功能电饭煲</p>
+                            <p class="title-p"></p>
                         </td>
                         <td class="td-price">
-                            30000
+                          
                         </td>
                         <td class="td-num">
-                            1
+                            <div class="arrow-l"><</div>
+                            <span class="num"></span>
+                            <div class="arrow-r">></div>
                         </td>
                         <td class="td-pay">
-                            2500
+                           
                         </td>
                         <td class="td-del">
                             <a href="javascript:;">删除</a>
@@ -79,19 +158,17 @@
             </table>
             <!-- 付款 -->
             <div class="paymoney clear">
+                <a href="javascript:;" class="delall left">删除全部</a>
                 <a href="javascript:;" class="shop-submit right">结算</a>
-                <span class="total-price right">111</span>
-                
-             
-
+                <span class="total-price right">0</span>
             </div>
         </div>
     </div>
 
     <script src="../src/script/thirdplugins/jquery.js"></script>
-    <script>
-        $('.topMune').load('topMune.html');
-    </script>
+   
+<script src="../src/script/thirdplugins/jquery.cookie.js"></script>
+<script src="../src/script/js/cart.js"></script>
 
 </body>
 

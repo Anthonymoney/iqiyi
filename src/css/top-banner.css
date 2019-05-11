@@ -1,13 +1,15 @@
 .open {
   position: relative;
-  height: 60px;
 }
-.open .small {
-  height: 60px;
-}
-.open .small a div {
+.open .small .small-a div {
   background-image: url(https://pic0.iqiyipic.com/common/20190412/c6ef65b9a5fc447b96a73185b8281c6e.jpg);
   height: 60px;
+  background-position: center center;
+}
+.open .big .big-a div {
+  display: none;
+  background-image: url(https://pic3.iqiyipic.com/common/20190412/0f0c5d0ad7aa4826a075c92196d9e404.jpg);
+  height: 0;
   background-position: center center;
 }
 
@@ -25,17 +27,11 @@
   line-height: 15px;
   text-indent: 4px;
   font-size: 12px;
+  background: url(../img/iqiyiMallPcIndexExpendTrans.png) no-repeat 30px 0px;
 }
 
-.fold::after {
-  content: "";
-  width: 15px;
-  height: 15px;
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  background: url(../img/iqiyiMallPcIndexExpendTrans.png) no-repeat;
+.fold-arrow {
+  background: url(../img/iqiyiMallPcIndexExpendTrans.png) no-repeat 30px -15px;
 }
 
 /*# sourceMappingURL=top-banner.css.map */

@@ -158,6 +158,35 @@
             line-height: 50px;
         }
     }
+
+    .shotsnum{
+        margin:10px 0 0 20px; 
+        height: 36px;
+        line-height: 36px;
+        position: relative;
+        .l-arrow{
+            border:1px gray solid;
+            cursor: pointer;
+            position: absolute;
+            top:0;
+            height: 36px;
+        }
+        .num{
+            font-style: normal;
+            color: red;
+            display: inline-block;
+            width: 40px;
+            height: 30px;
+            position: absolute;
+            top:0;  
+            left: 15px;
+            
+        }
+        .r-arrow{
+            @extend .l-arrow;
+            left: 60px;
+        }
+    }
     .buy{
         margin-top: 15px;
         .nowbuy{
@@ -176,4 +205,19 @@
         }
     }
     
+}
+
+/*购物车*/
+.tocart{
+    display: block;
+    position: fixed;
+    right: 100px;
+    top:300px;
+    width: 20px;
+    height: 20px;
+    line-height: 30px;
+    text-align: right;
+    color:#fff;
+    background: url(../img/detail_icon4.png) no-repeat black;
+    background-position: 0px -20px;
 }
