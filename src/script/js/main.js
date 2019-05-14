@@ -179,7 +179,7 @@
                        str+=`<li>
                        <div>
                             <a href="details.html?sid=${value.sid}" target='blank'>
-                            <img src="${value.url}">
+                            <img src="${value.url}" width='140' height='140' data-original="${value.url}"> 
                             </a>
                             <div>
                             <p class="title">${value.title}</p>
@@ -199,6 +199,9 @@
                        </li>`      
                    })
                    $('.ul-productlist').html(str); 
+                   $('.ul-productlist img').lazyload({
+                        effect: "fadeIn"
+                   })
                }
            });
         }
@@ -317,4 +320,47 @@
 
     }
     new banner().init();
+})();
+
+
+//注册后显示用户名
+;(function(){
+    class showname{
+        constructor(){
+            this.namebox=$('.top-nav-left .login-name');
+            this.exit=$('.top-nav-left .exit')
+            this.login=$('.top-nav-left .login');
+            this.regist=$('.top-nav-left .regist');
+        }
+        init(){
+           this.nameshow();
+           this.namehidden();
+        }
+
+        nameshow(){
+            if($.cookie('name')){
+                this.namebox.css({
+                    display:"block",
+                    width:100
+                }).html('欢迎'+$.cookie('name'));
+                this.exit.css('display','block');
+                this.login.css('display','none');
+                this.regist.css('display','none');
+            }
+        }
+
+        namehidden(){
+            var _this=this;
+            this.exit.on('click',function(){
+                $.cookie('name',name, { expires: -1 });
+                if(!$.cookie('name')){
+                    _this.namebox.css('display','none');
+                    _this.exit.css('display','none');
+                    _this.login.css('display','block');
+                    _this.regist.css('display','block');
+                }
+            })
+        }
+    }
+  new  showname().init();
 })();

@@ -16,7 +16,7 @@
             this.allcheck();
             this.delall();
             this.delsingle();
-         
+            this.sumnum();
 
         }
 
@@ -25,7 +25,7 @@
         createpic() {
             var _this = this;
             var $price = 0;
-            var $sumnum=0;
+
             $.each(this.sidarr, function (index, value) {
                 $.ajax({
                     url: "http://10.31.163.23/iqiyi/php/returndetails.php",
@@ -48,15 +48,21 @@
                         $price += Number(($clonebox.find('.td-price').html() * $clonebox.find('.num').html()).toFixed(2));
                         $('.total-price').html($price);
 
-                        //页面一加载 给顶部购物车数量赋值
-                        $sumnum+=Number($clonebox.find('.num').html());
-                        $('.cartnum').html($sumnum);
-
+                    
+                     
                     }
                 });
             })
         }
 
+         //页面一加载 给顶部购物车数量赋值
+         sumnum(){
+             var sumnum=0;
+             $.each(this.numberarr,function(index,value){
+                sumnum+=parseInt(value);
+             })
+             $('.cartnum').html(sumnum);
+         }
 
 
         //增加商品数量

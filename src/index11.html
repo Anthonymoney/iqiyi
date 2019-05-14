@@ -23,86 +23,82 @@
 <body>
     <!-- 遮罩 -->
     <div class="mask"></div>
-  
-  
+
     <!-- top -->
     <div class="topMune">
-            <div class="wrapper">
-                    <div class="top-nav">
-                        <!-- left -->
-                        <div class="top-nav-left left">
-                            <div class="username" style="display:none">
-                                <div class="menu">
-                                    <a href="" class="name">用户</a>
-                                    <i></i>
-                                </div>
+        <div class="wrapper">
+            <div class="top-nav">
+                <!-- left -->
+                <div class="top-nav-left left">
+                    <div class="exit left" style="display:none">
+                           退出
+                    </div>
+                    <span class="welcome left">欢迎来到爱奇艺商城</span>
+                    <div class="login-regist left">
+                        <a href="javascript:;" class="login left">请登录</a>
+                        <a href="javascript:;" class="regist left">免费注册</a>
+                    </div>
+                    <div class="login-name left" style="display:none"></div>
+                </div>
+                <!-- right -->
+                <div class="top-nav-right right">
+                    <div class="cart left">
+                        <a href="cart.html" class="cart-a left">
+                            <i class="cart-i left"></i>
+                            <span class="text-span left">
+                                购物车
+                                <i class="cartnum">0</i>
+                                件
+                            </span>
+                        </a>
+                    </div>
+                    <div class="client-center left">
+                        <a href="" class="client-a left">
+                            <i class="client-i left"></i>
+                            <span class="text-span left">
+                                买家中心
+                            </span>
+                        </a>
+                    </div>
+                    <div class="favorites left">
+                        <a href="" class="favorites-a left">
+                            <i class="favorites-i left"></i>
+                            <span class="text-span left">我的收藏</span>
+                        </a>
+                    </div>
+                    <div class="cutline left"></div>
+                    <div class="aboutus left">
+                        <a href="" class="aboutus-a left">
+                            <i class="aboutus-i left"></i>
+                            <span class="text-span left">关于我们</span>
+                            <i class="aboutus-i-1 left"></i>
+                        </a>
+                        <div class="two-code">
+                            <div class="code-left left">
+                                <img src="../src/img/mall_qrcodeNew.jpg">
                             </div>
-                            <span class="welcome left">欢迎来到爱奇艺商城</span>
-                            <div class="login-regist left">
-                                <a href="javascript:;" class="login left">请登录</a>
-                                <a href="javascript:;" class="regist left">免费注册</a>
-                            </div>
-                            <div class="login-name" style="display:none"></div>
-                        </div>
-                        <!-- right -->
-                        <div class="top-nav-right right">
-                            <div class="cart left">
-                                <a href="cart.html" class="cart-a left">
-                                    <i class="cart-i left"></i>
-                                    <span class="text-span left">
-                                        购物车
-                                        <i class="cartnum">0</i>
-                                        件
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="client-center left">
-                                <a href="" class="client-a left">
-                                    <i class="client-i left"></i>
-                                    <span class="text-span left">
-                                        买家中心
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="favorites left">
-                                <a href="" class="favorites-a left">
-                                    <i class="favorites-i left"></i>
-                                    <span class="text-span left">我的收藏</span>
-                                </a>
-                            </div>
-                            <div class="cutline left"></div>
-                            <div class="aboutus left">
-                                <a href="" class="aboutus-a left">
-                                    <i class="aboutus-i left"></i>
-                                    <span class="text-span left">关于我们</span>
-                                    <i class="aboutus-i-1 left"></i>
-                                </a>
-                                <div class="two-code">
-                                    <div class="code-left left">
-                                        <img src="../src/img/mall_qrcodeNew.jpg">
-                                    </div>
-                                    <div class="code-right left">
-                                        <p>微信扫一扫</p>
-                                        <p>了解商城动态</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="cutline left"></div>
-                            <div class="merchant-center left">
-                                <a href="" class="merchant-a left">
-                                    <i class="merchant-i left"></i>
-                                    <span class="text-span left">商家中心</span>
-                                </a>
-                            </div>
-                            <div class="cutline left"></div>
-                            <div class="ai-index left">
-                                <a href="//www.iqiyi.com/" class="ai-a left">
-                                    <span class="text-span left">爱奇艺首页</span>
-                                </a>
+                            <div class="code-right left">
+                                <p>微信扫一扫</p>
+                                <p>了解商城动态</p>
                             </div>
                         </div>
                     </div>
+                    <div class="cutline left"></div>
+                    <div class="merchant-center left">
+                        <a href="" class="merchant-a left">
+                            <i class="merchant-i left"></i>
+                            <span class="text-span left">商家中心</span>
+                        </a>
+                    </div>
+                    <div class="cutline left"></div>
+                    <div class="ai-index left">
+                        <a href="//www.iqiyi.com/" class="ai-a left">
+                            <span class="text-span left">爱奇艺首页</span>
+                        </a>
+                    </div>
                 </div>
+            </div>
+        </div>
     </div>
 
     <!-- top-banner -->
@@ -142,7 +138,7 @@
                     <!-- 搜索下拉列表 -->
                     <div class="search-list">
                         <ul>
-                            
+
                         </ul>
                     </div>
                 </div>
@@ -235,7 +231,7 @@
             <span>请登陆</span>
             <a href="javascript:;" class="right close">X</a>
         </div>
-        <form action="">
+        <form method="POST">
             <div class="username">
                 <label for="">用户名：</label><input type="text" name="username" placeholder="请输入用户名">
             </div>
@@ -243,38 +239,38 @@
                 <label for="">密码：</label><input type="password" name="password" placeholder="请输入密码">
             </div>
             <div class="btn">
-                <input type="submit" value="登入">
+                <input type="submit" value="登入" name="submit" class="login">
             </div>
         </form>
     </div>
 
     <!-- 注册 -->
     <div class="register-box">
-            <div class="clear">
-                <span class="register-close right">X</span>
-            </div>
-           
-            <form action="" method="POST">
-                <div class="box">
-                    <label for="">用户名：</label><input type="text" name="username" placeholder="请输入用户名"><br>
-                    <span>√</span>
-                    <i>X</i>
-                </div>
-                <div class="input-tip"></div>
-                <div class="box">
-                    <label for="">设置密码：</label><input type="password" name="password" placeholder="请输入密码">
-                    <span>√</span>
-                    <i>X</i>
-                </div>
-                <div class="input-tip"></div>
-                <div class="box">
-                    <label for="">确认密码：</label><input type="password" placeholder="请再次输入密码">
-                    <span>√</span>
-                    <i>X</i>
-                </div>
-                <div class="input-tip"></div>
-                <input type="submit" value="立即注册" name="submit" class="registor-sub">
-            </form>
+        <div class="clear">
+            <span class="register-close right">X</span>
+        </div>
+
+        <form action="http://10.31.163.23/iqiyi/php/regist.php" method="POST" id='form'>
+            <p class="box">
+                <label for="username">用户名：</label>
+                <input type="text" name="username" id="username" placeholder="请输入用户名">
+            </p>
+            <label class="error" for="username"></label>
+
+            <p class="box">
+                <label for="password">设置密码：</label>
+                <input type="password" name="password" id="password" placeholder="请输入密码">
+            </p>
+            <label class="error" for="password"></label>
+
+            <p class="box">
+                <label repass" for="repass">确认密码：</label>
+                <input type="password" name="repass" id="repass" placeholder="请再次输入密码">
+            </p>
+            <label class="error" for="repass"></label>
+
+            <input type="submit" value="立即注册" name="submit" class="registor-sub">
+        </form>
     </div>
 
     <!-- 侧边栏 -->
@@ -295,19 +291,24 @@
         <div class="banner">
             <ul class="banner-ul">
                 <li class="banner-li" style="opacity:1">
-                    <a href="" class="banner-a" style="background-image: url(https://pic3.iqiyipic.com/common/20190412/0f0c5d0ad7aa4826a075c92196d9e404.jpg)"></a>
+                    <a href="" class="banner-a"
+                        style="background-image: url(https://pic3.iqiyipic.com/common/20190412/0f0c5d0ad7aa4826a075c92196d9e404.jpg)"></a>
                 </li>
                 <li class="banner-li">
-                    <a href="" class="banner-a" style="background-image:url(https://pic3.iqiyipic.com/common/20190314/d2f1593ba97b40d7ae2eb96174a35850.jpg)"></a>
+                    <a href="" class="banner-a"
+                        style="background-image:url(https://pic3.iqiyipic.com/common/20190314/d2f1593ba97b40d7ae2eb96174a35850.jpg)"></a>
                 </li>
                 <li class="banner-li">
-                    <a href="" class="banner-a" style="background-image:url(https://pic1.iqiyipic.com/common/20190409/0ca44de103d845e5937ed6f1c038d45f.jpg)"></a>
+                    <a href="" class="banner-a"
+                        style="background-image:url(https://pic1.iqiyipic.com/common/20190409/0ca44de103d845e5937ed6f1c038d45f.jpg)"></a>
                 </li>
                 <li class="banner-li">
-                    <a href="" class="banner-a" style="background-image:url(https://pic0.iqiyipic.com/common/20190311/f778af6448d24083970e8a7e9adc328e.jpg)"></a>
+                    <a href="" class="banner-a"
+                        style="background-image:url(https://pic0.iqiyipic.com/common/20190311/f778af6448d24083970e8a7e9adc328e.jpg)"></a>
                 </li>
                 <li class="banner-li">
-                    <a href="" class="banner-a" style="background-image:url(http://pic3.iqiyipic.com/common/20190308/3c5847e1b11b4823a6cebc0a50944795.jpg)"></a>
+                    <a href="" class="banner-a"
+                        style="background-image:url(http://pic3.iqiyipic.com/common/20190308/3c5847e1b11b4823a6cebc0a50944795.jpg)"></a>
                 </li>
             </ul>
             <a href="javascript:;" class="ban-left"></a>
@@ -352,8 +353,8 @@
             <!-- productlist js拼接-->
             <div class="productlist">
                 <ul class="ul-productlist clear">
-                    
-                    
+
+
                 </ul>
             </div>
         </div>
@@ -378,8 +379,7 @@
                         </div>
                         <div class="shopimg left">
                             <a href="">
-                                <img
-                                    src="../src/img/d85163691c9948bbb7998e7c951d0111.jpg">
+                                <img src="../src/img/d85163691c9948bbb7998e7c951d0111.jpg">
                             </a>
                         </div>
                     </li>
@@ -390,8 +390,7 @@
                         </div>
                         <div class="shopimg left">
                             <a href="">
-                                <img
-                                    src="../src/img/6f503d14114b4b3587b072ff45d7c114.jpg">
+                                <img src="../src/img/6f503d14114b4b3587b072ff45d7c114.jpg">
                             </a>
                         </div>
                     </li>
@@ -402,8 +401,7 @@
                         </div>
                         <div class="shopimg left">
                             <a href="">
-                                <img
-                                    src="../src/img/48daa814af5d4ceaa02624392e634d2e.jpg">
+                                <img src="../src/img/48daa814af5d4ceaa02624392e634d2e.jpg">
                             </a>
                         </div>
                     </li>
@@ -414,8 +412,7 @@
                         </div>
                         <div class="shopimg left">
                             <a href="">
-                                <img
-                                    src="../src/img/c0636ddcff28471596d483258aa45622.jpg">
+                                <img src="../src/img/c0636ddcff28471596d483258aa45622.jpg">
                             </a>
                         </div>
                     </li>
@@ -510,8 +507,7 @@
                         <li>
                             <div class="goodimg">
                                 <a href="">
-                                    <img src="../src/img/5d4547502f6a42c5a1baa9a987787716.jpg"
-                                        alt="">
+                                    <img src="../src/img/5d4547502f6a42c5a1baa9a987787716.jpg" alt="">
                                 </a>
                                 <p class="p1">干物妹小埋正版周边</p>
                                 <p class="p2">哥哥帮我买来！</p>
@@ -535,13 +531,132 @@
 
     <!-- footer -->
     <div class="footer">
+        <div class="wrapper">
+            <div class="permission">
+                <ul class="clear">
+                    <li class="left">
+                        <a href="">京网文[2015]0652-282号-1</a>
+                        <a href="">京ICP证110636号</a>
+                        <a href="">食品许可证JY11108111598788</a>
+                    </li>
+
+                    <li class="left">
+                        <a href="">
+                            <img src="http://www.iqiyipic.com/common/fix/trust.png" alt="">
+                            中国互联网诚信联盟
+                        </a>
+                        <a href="">
+                            <img src="http://www.iqiyipic.com/common/fix/records.png" alt="">
+                            经营性网站备案信息
+                        </a>
+                    </li>
+
+                    <li class="left">
+                        <a href="">出版物经营许可证 </a>
+                        <a href="">京公网安备 11010802010263号</a>
+                    </li>
+
+                    <li class="left">
+                        <a href="">信息网络传播视听节目许可证 0110544号</a>
+                        <a href="">增值电信业务经营许可证 B2-20120273</a>
+                    </li>
+
+                    <li class="left">
+                        <a href="">广播电视节目制作经营许可证 (京)字第1938号</a>
+                        <a href="">互联网药品信息服务资格证书 (京)-经营性-2013-0012</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="introduce">
+                <a href="">
+                    公司介绍
+                </a>
+                <i>|</i>
+                <a href="">
+                    新闻动态
+                </a>
+                <i>|</i>
+                <a href="">
+                    联系方式
+                </a>
+                <i>|</i>
+                <a href="">
+                    招聘英才
+                </a>
+                <i>|</i>
+                <a href="">
+                    爱奇艺实验室
+                </a>
+                <i>|</i>
+                <a href="">
+                    开放平台
+                </a>
+                <i>|</i>
+                <a href="">
+                    爱奇艺内容合作标准
+                </a>
+                <i>|</i>
+                <a href="">
+                    爱奇艺号
+                </a>
+                <i>|</i>
+                <a href="">
+                    安全应急响应中心
+                </a>
+                <i>|</i>
+                <a href="">
+                    帮助中心
+                </a>
+                <i>|</i>
+                <a href="">
+                    侵权投诉
+                </a>
+                <i>|</i>
+            </div>
+            <div class="report">
+                <a href="">
+                    中国互联网举报中心
+                </a>
+                <a href="" class="m30">
+                    网络举报APP下载
+                </a>
+                <a href="" class="m30">
+                    网上有害信息举报专区
+                </a>
+                <a href="" class="m30">
+                    网上暴恐有害信息举报
+                </a>
+                <a href="" class="m30">
+                    儿童色情信息举报专区
+                </a>
+                <a href="" class="m30">
+                    违法和不良信息举报电话：400-923-7171
+                </a>
+                <a href="" class="m30">
+                    举报邮箱：jubao365@qiyi.com
+                </a>
+
+            </div>
+            <div class=" copyright ">
+                <a href="">
+                    反盗版和反盗链权利声明
+                </a>
+                Copyright © 2018
+                <a href="">爱奇艺</a>
+                All Rights Reserved
+            </div>
+        </div>
     </div>
-     
-    
+
+
     <script src="../src/script/thirdplugins/jquery.js"></script>
+    <script src="../src/script/thirdplugins/jquery.cookie.js"></script>
+    <script src="../src/script/thirdplugins/jquery.lazyload.js"></script>
+    <script src="../src/script/js/main.js"></script>
+    <script src="../src/script/js/cart.js"></script>
+    <script src="../src/script/js/regist.js"></script>
+    <script src="../src/script/js/login.js"></script>
     
-    
-   <script src="../src/script/js/main.js"></script>
 
 </body>
 

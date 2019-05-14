@@ -16,6 +16,11 @@ $top_display:display;
 }
 
 /*登陆注册*/
+.exit{
+    cursor: pointer;
+    margin-right:20px 
+}
+
 .login-regist{
     #{$top_display}: inline;
     height: 30px;

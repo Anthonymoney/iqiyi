@@ -6,8 +6,8 @@
   bottom: 0;
   right: 0;
   margin: auto;
-  width: 420px;
-  height: 320px;
+  width: 600px;
+  height: 350px;
   font-size: 14px;
   padding: 10px;
   position: absolute;
@@ -24,8 +24,9 @@
   line-height: 50px;
   padding: 0 15px;
   position: relative;
+  margin-bottom: 10px;
 }
-.register-box .box label {
+.register-box .box .fwidth {
   display: inline-block;
   width: 70px;
 }
@@ -37,37 +38,12 @@
   height: 30px;
   background: #fff;
 }
-.register-box .box span {
-  display: none;
-  position: absolute;
-  right: 10px;
-  top: 16px;
-  border-radius: 50%;
-  width: 16px;
-  color: green;
-  text-align: center;
-  line-height: 16px;
+.register-box .error {
+  display: block;
+  line-height: 23px;
   font-weight: 700;
-  height: 16px;
-  border: 1px solid green;
-}
-.register-box .box i {
-  display: none;
-  cursor: pointer;
-  position: absolute;
-  right: 10px;
-  top: 16px;
-  width: 16px;
-  color: #999;
-  text-align: center;
-  line-height: 16px;
-  font-weight: 700;
-  height: 16px;
-}
-.register-box .input-tip {
-  padding-top: 10px;
-  height: 20px;
-  line-height: 20px;
+  height: 23px;
+  margin-bottom: 5px;
 }
 .register-box .registor-sub {
   width: 100%;
